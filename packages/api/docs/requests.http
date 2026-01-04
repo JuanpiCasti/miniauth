@@ -1,0 +1,25 @@
+POST http://localhost:8000/projects
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "name": "juanpi",
+  "expirationMins": 5
+}
+
+###
+
+GET http://localhost:8000/projects?user_id=2
+
+###
+POST http://localhost:8000/sign
+Content-Type: application/json
+
+{
+  "sub": "2",
+  "client_id": "12345",
+  "client_secret": "12345"
+}
+
+###
+GET http://localhost:8000/keystore?client_id=12345

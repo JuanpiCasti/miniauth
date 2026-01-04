@@ -1,0 +1,22 @@
+{
+  "name": "@miniauth/schemas",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "jose": "^6.1.3"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir ./dist"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "elysia": "^1.4.20",
+    "zod": "^4.2.1"
+  }
+}
